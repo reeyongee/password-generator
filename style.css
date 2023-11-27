@@ -1,0 +1,166 @@
+@import url("https://fonts.googleapis.com/css2?family=Karla:wght@300;400;500;600;700;800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;700;800&display=swap");
+:root {
+	--clr-body: black;
+	--clr-background: #ecfdf5;
+	--clr-heading: #10b981;
+	--clr-btn: #10b981;
+	--clr-text: #2b283a;
+	--clr-field: #10b981;
+	--clr-para: #6b7280;
+	--field: #273549;
+}
+.dark-mode {
+	--clr-background: #1f2937;
+	--clr-heading: #4adf86;
+	--clr-btn: #10b981;
+	--clr-text: #ffffff;
+	--clr-field: #ffffff;
+	--clr-para: #d5d4d8;
+	--clr-body: white;
+}
+body {
+	font-family: "Karla", sans-serif;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background-color: var(--clr-body);
+	transition: background-color 0.5s ease-in-out;
+}
+.card {
+	margin-top: 5vh;
+	height: 550px;
+	width: 550px;
+	background: var(--clr-background);
+	border: none;
+	border-radius: 20px;
+	transition: background 0.5s ease-in-out;
+}
+.card-content {
+	margin: 80px 52px;
+}
+#heading {
+	color: var(--clr-text);
+	font-weight: 800;
+	line-height: 1;
+	font-size: 40px;
+	margin: 0;
+	transition: color 0.5s ease-in-out;
+}
+
+#heading span {
+	color: var(--clr-heading);
+	transition: color 0.5s ease-in-out;
+}
+#heading br {
+	line-height: 2px;
+	line-height: 0;
+}
+p {
+	font-family: "Inter";
+	margin-top: 10px;
+	font-size: 20px;
+	color: var(--clr-para);
+	transition: color 0.5s ease-in-out;
+}
+.button-space {
+	margin-top: 40px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+button {
+	color: var(--clr-text);
+	background: var(--clr-btn);
+	border: none;
+	border-radius: 6px;
+	cursor: pointer;
+	opacity: 0.9;
+	transition: hover ease-in-out filter 0.35s, transform 0.35s, opacity 0.35s;
+	transition: color background 0.5s ease-in-out;
+}
+.btn {
+	font-family: "Inter";
+	font-size: 16px;
+	height: 40px;
+	width: 200px;
+	transition: color 0.5s ease-in-out;
+}
+.icon-btn {
+	margin-left: 10px;
+	height: 40px;
+	width: 40px;
+	transition: color 0.5s ease-in-out;
+}
+.dark-mode-icon {
+	vertical-align: middle;
+}
+.icon-hover {
+	transition: font-variation-settings 0.35s ease-in-out;
+}
+.material-symbols-outlined {
+	font-variation-settings: "FILL" 0, "wght" 250, "GRAD" 0, "opsz" 24;
+}
+hr {
+	border: 1px solid #2f3e53;
+	margin-top: 34px;
+}
+.text-fields {
+	display: flex;
+	justify-content: center;
+	margin-top: 35px;
+}
+
+.text-field {
+	caret-color: transparent;
+	cursor: pointer;
+	font-family: "Inter";
+	height: 40px;
+	width: 200px;
+	background: var(--field);
+	border: none;
+	border-radius: 6px;
+	color: var(--clr-field);
+	text-align: center;
+	transition: color 0.5s ease-in-out;
+}
+button:hover {
+	filter: brightness(135%);
+	opacity: 1;
+}
+button:active {
+	transition: all 0.025s ease-in-out;
+	transform: scale(0.95);
+}
+.icon-hover:hover {
+	font-variation-settings: "FILL" 1, "wght" 500, "GRAD" 0, "opsz" 24;
+}
+.copy-btn {
+	transition: transform 0.5s ease-in-out;
+}
+.copy-btn:hover {
+	transform: scale(1.05);
+}
+.copied {
+	text-align: center;
+	margin-left: 15px;
+	font-size: 14px;
+	padding: 10px;
+	margin-top: 30px;
+	height: 20px;
+	width: 400px;
+	border: none;
+	border-radius: 6px;
+	background: var(--field);
+	color: var(--clr-btn);
+	font-family: "Inter";
+	visibility: hidden;
+	opacity: 0;
+	transform: translateY(30px);
+	transition: all 0.25s ease-in-out;
+}
+.show {
+	visibility: initial;
+	opacity: 1;
+	transform: translateY(-5px);
+}
